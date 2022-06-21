@@ -1,0 +1,34 @@
+pvend <-function(m, n, nomi, effi) {
+  result = (1-(1+effi)**(-n))/(nomi)
+  result
+}
+
+fvend <-function(m, n, nomi, effi) {
+  result = ((1+effi)**n-1)/(nomi)
+  result
+}
+
+pvadv <-function(m, n, nomi, effi) {
+  result = (1-(1+effi)**-n)/(nomi)*((1+effi)**(1/m))
+  result
+}
+
+fvadv <-function(m, n, nomi, effi) {
+  result = ((1+effi)**n-1)/(nomi)*(1+effi)**(1/m)
+  result
+}
+
+effi <-function(m, i) {
+  i = (1+i/m)**m-1
+  i
+}
+
+nomi <-function(m, i) {
+  i = m*((1+i)**(1/m)-1)
+  i
+}
+
+v <- function(i) {
+  result <- (1+i)**-1
+  result
+}
